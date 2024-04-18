@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SearchBarComponent } from '../../widgets/search-bar/search-bar.component';
-import { CardComponent } from '../../../../projects/my-card/src/lib/card/card.component';
+import { CardComponent } from '@grv3101/my-card';
 
 @Component({
   selector: 'app-mail-box',

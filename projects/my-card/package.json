@@ -1,5 +1,5 @@
 {
-  "name": "my-card",
+  "name": "@grv3101/my-card",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^17.3.0",

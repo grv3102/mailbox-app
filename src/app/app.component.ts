@@ -5,8 +5,6 @@ import { MailContentComponent } from './components/mail-content/mail-content.com
 import { MailBoxComponent } from './components/mail-box/mail-box.component';
 import { UserImageComponent } from './widgets/user-image/user-image.component';
 import { SearchBarComponent } from './widgets/search-bar/search-bar.component';
-import { CardComponent } from 'my-card';
-const data: any[] = [];
 
 @Component({
   selector: 'app-root',
@@ -20,7 +18,6 @@ const data: any[] = [];
     MailBoxComponent,
     UserImageComponent,
     SearchBarComponent,
-    CardComponent,
   ],
 })
 export class AppComponent implements OnDestroy {
@@ -30,7 +27,6 @@ export class AppComponent implements OnDestroy {
   private currentChunk = 0;
   private chunkSize = 50;
   private worker: Worker | null = null;
-  currentSelected!: number;
 
   toggleSidebar() {
     this.isCollapsed = !this.isCollapsed;
