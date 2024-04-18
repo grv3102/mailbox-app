@@ -1,0 +1,26 @@
+<div
+  class="card"
+  [ngClass]="{ active: currentSelected === userData?.id }"
+  [id]="userData?.id"
+  (click)="onSelect(userData?.id)"
+>
+  <app-user-image [userImage]="userData?.imageUrl"></app-user-image>
+  <div class="user-details">
+    <div class="user-name-time-blk">
+      <div class="name">{{ userData?.sendName }}</div>
+      <div class="timestamp">Yesterday 01:11 PM</div>
+    </div>
+    <div class="message-type">Invitations</div>
+    <div class="message-content">
+      <p>
+        {{ userData?.message }}
+      </p>
+    </div>
+    @if(userData?.attachment?.length >0){
+    <div class="attachment">
+      <span class="icon">{{ userData?.attachment?.length }} Attachments</span>
+    </div>
+
+    }
+  </div>
+</div>

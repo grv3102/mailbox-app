@@ -1,0 +1,53 @@
+.message-input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid #33333333;
+  position: relative;
+  top: 75px;
+  .message-input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 10px;
+    &:focus,
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+
+  .attachment-button,
+  .send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+
+    .attachment-icon {
+      display: block;
+      position: relative;
+      top: 5px;
+      width: 25px;
+      height: 35px;
+      background: transparent url("../../../assets/svg/paper-pin.svg") 0% 0%
+        no-repeat padding-box;
+    }
+    .send-icon {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background: transparent url("../../../assets/svg/1933005.svg") 0% 0%
+        no-repeat padding-box;
+    }
+  }
+}

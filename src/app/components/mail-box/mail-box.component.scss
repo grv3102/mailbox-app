@@ -1,0 +1,26 @@
+.main-content {
+  width: 580px;
+  height: calc(100vh - 23px);
+  background: #f9faf5 0% 0% no-repeat padding-box;
+  opacity: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+
+  .mail-card {
+    display: flex;
+    gap: 4px;
+    flex: 1;
+    padding: 10px 20px;
+    flex-direction: column;
+    max-height: 90vh;
+    overflow: hidden auto;
+    width: 100%;
+    app-card {
+      display: flex;
+      flex: 1;
+    }
+  }
+}

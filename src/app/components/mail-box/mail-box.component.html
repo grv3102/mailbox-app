@@ -1,0 +1,14 @@
+<div class="main-content">
+  <app-search-bar></app-search-bar>
+
+  <div class="mail-card">
+    @if (items.length > 0) { @for (item of items; track $index) {
+    <app-card
+      [userData]="item"
+      [currentSelected]="currentSelected"
+      (selectionChange)="currentSelected = $event"
+    >
+    </app-card>
+    } }@else{ Loading... }
+  </div>
+</div>

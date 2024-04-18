@@ -1,0 +1,52 @@
+<div class="layout-container">
+  <div class="sender-profile-image">
+    <app-user-image></app-user-image>
+  </div>
+
+  <div class="email-content">
+    <div class="header">
+      <div class="left-actions"></div>
+    </div>
+    <div class="sender-info">
+      <div class="sender-details">
+        <p class="sender-name">Sam Miller</p>
+        <p class="email-type">Portfolio</p>
+        <p class="sender-email-id">{{ "sammiller@gmail.com" }}</p>
+      </div>
+      <div class="sender-email-date-time">Today 08:45 PM</div>
+      <div class="sender-email-content">
+        <p class="sender-name">Hi Mike,</p>
+        <p class="message">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          fermentum facilisis libero, venenatis mattis orci hendrerit eget.
+          Etiam ultrices mollis justo, nec fermentum elit viverra eu. Cras at
+          cursus turpis. Nullam magna sem, vulputate quis massa nec, mollis
+          sollicitudin dui. Sed eu massa in arcu pharetra posuere. Phasellus
+          maximus neque non ex dapibus fringilla. Praesent nec lacinia enim.
+          Curabitur a dui nisl.
+        </p>
+        <div class="attachment-number"></div>
+        <div class="attachments">
+          <img src="./assets/png/pexels-photo-2533686.png" alt="" />
+          <img src="./assets/png/pexels-photo-2533686.png" alt="" />
+          <img src="./assets/png/pexels-photo-2533686.png" alt="" />
+          <img src="./assets/png/pexels-photo-2533686.png" alt="" />
+        </div>
+        <div class="download-btn-div">
+          <button class="download-button">
+            <span class="download-icon"></span>&nbsp;Download
+          </button>
+          <span class="download-size-text">{{ "5.6 mb total" }}</span>
+        </div>
+      </div>
+
+      <app-message-bar></app-message-bar>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span class="copyright"></span><span class="company-name"></span>
+  </div>
+
+  <div class="right-actions"></div>
+</div>

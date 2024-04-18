@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex: 1;
+  align-self: stretch;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: calc(100vh - 2vh);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  opacity: 1;
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+}

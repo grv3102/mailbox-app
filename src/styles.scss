@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+// styles.scss
+@import "styles/base/_reboot";
+@import "styles/base/_variables";
+@import "styles/base/_mixins";
+// Import other styles as needed
+
+:root {
+  --color-white: #{$color-white};
+  --color-black: #{$color-black};
+  --color-gray-lightest: #{$color-gray-lightest};
+  --color-gray-lighter: #{$color-gray-lighter};
+  --color-gray-dark: #{$color-gray-dark};
+  --color-gray: #{$color-gray};
+  --color-gray-light: #{$color-gray-light};
+  --color-gray-very-light: #{$color-gray-very-light};
+  --color-blue: #{$color-blue};
+  --color-red: #{$color-red};
+  --color-black-transparent: #{rgba(0, 0, 0, 0.078)};
+  --color-blue-transparent: #{rgba(31, 181, 235, 0.4)};
+  --color-red-transparent: #{rgba(255, 95, 95, 0.45)};
+  --color-gray-dark-semi-transparent: #{rgba(51, 51, 51, 0.7)};
+  --color-gray-dark-more-transparent: #{rgba(51, 51, 51, 0.5)};
+  --color-gray-dark-most-transparent: #{rgba(51, 51, 51, 0.2)};
+  --color-black-most-transparent: #{rgba(0, 0, 0, 0.05)};
+  --color-gray-dark-very-transparent: #{rgba(51, 51, 51, 0.6)};
+  --color-gray-dark-ultra-transparent: #{rgba(51, 51, 51, 0.2)};
+  --color-light-blue: #{$color-light-blue};
+}

@@ -1,0 +1,119 @@
+.card {
+  width: 24vw;
+  height: 215px;
+  background: #ffffff;
+  border-radius: 20px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  margin-bottom: 25px;
+  gap: 14px;
+  cursor: pointer;
+  .user-details {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    .user-name-time-blk {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .name {
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+      }
+      .timestamp {
+        text-align: right;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+      }
+    }
+
+    .message-type {
+      text-align: left;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 27px;
+      letter-spacing: 0px;
+      color: #333333;
+      opacity: 1;
+    }
+    .message-content {
+      text-align: left;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0px;
+      color: #333333b3;
+      opacity: 1;
+      max-height: 51px;
+      margin: 14px 0;
+    }
+
+    .attachment {
+      text-align: left;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0px;
+      color: #1fb5eb;
+      opacity: 1;
+      .icon {
+        display: flex;
+        gap: 10px;
+        flex: 1;
+        &::before {
+          content: " ";
+          display: block;
+          width: 14px;
+          height: 24px;
+          background: transparent
+            url("../../assets/svg/noun_Attachment_1084336.svg") 0% 0% no-repeat
+            padding-box;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &.hover {
+    box-shadow: 20px 7px 40px rgba(0, 0, 0, 0.08);
+  }
+
+  &.active {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+    transform: scale(1.03);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    border: 2px solid #1fb5eb;
+    background: lighten(#ffffff, 2%);
+
+    .name,
+    .timestamp,
+    .message-type,
+    .message-content,
+    .attachment {
+      color: #1fb5eb;
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.layout-container {
+  display: flex;
+  padding: 20px;
+
+  .sender-profile-image {
+    width: 10vw;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    top: 105px;
+  }
+
+  .right-actions {
+    display: flex;
+    background: transparent url("../../../assets/svg/group_23.svg") 0% 0%
+      no-repeat padding-box;
+    width: 10vw;
+    height: 32px;
+    opacity: 1;
+  }
+  .email-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 64px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left-actions {
+        background: transparent url("../../../assets/svg/group_25.svg") 0% 0%
+          no-repeat padding-box;
+        width: 240px;
+        height: 25px;
+        opacity: 1;
+      }
+    }
+
+    .sender-info {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 16px;
+      .sender-details {
+        p {
+          &.sender-name {
+            width: 101px;
+            height: 27px;
+            text-align: left;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 0px;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+          }
+
+          &.email-type {
+            width: 75px;
+            height: 27px;
+            text-align: left;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+          }
+
+          &.sender-email-id {
+            width: 161px;
+            height: 21px;
+            text-align: left;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 27px;
+            letter-spacing: 0.26px;
+            color: #33333380;
+            opacity: 1;
+          }
+        }
+      }
+
+      .sender-email-date-time {
+        width: 105px;
+        height: 19px;
+        text-align: left;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0px;
+        color: #333333;
+        opacity: 1;
+      }
+
+      .sender-email-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 16px;
+        p {
+          &.sender-name {
+            width: auto;
+            height: 32px;
+            text-align: left;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0px;
+            color: #333333;
+            opacity: 1;
+          }
+
+          &.message {
+            display: flex;
+            width: auto;
+            text-align: justify;
+            color: #333333b3;
+            opacity: 1;
+          }
+        }
+
+        .attachment-number {
+          width: 124px;
+          height: 24px;
+          background: transparent url("../../../assets/svg/group_11.svg") 0% 0%
+            no-repeat padding-box;
+          opacity: 1;
+        }
+
+        .attachments {
+          display: flex;
+          flex: 1;
+          gap: 16px;
+          height: 100%;
+          width: 100%;
+          img {
+            width: 162px;
+            height: 90px;
+          }
+        }
+
+        .download-btn-div {
+          display: flex;
+          gap: 21px;
+          align-items: center;
+          justify-content: flex-start;
+          .download-button {
+            padding: 8px 12px;
+            font-size: 16px;
+            color: rgba(51, 51, 51, 0.5019607843);
+            background: #ffffff 0% 0% no-repeat padding-box;
+            border: 1px solid rgba(51, 51, 51, 0.5019607843);
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-flex;
+            cursor: pointer;
+            gap: 4px;
+            .download-icon {
+              display: inline-flex;
+              position: relative;
+              top: 5px;
+              width: 18px;
+              height: 18px;
+              background: transparent url("../../../assets/svg/126488.svg") 0%
+                0% no-repeat padding-box;
+              opacity: 0.4;
+            }
+
+            // &:hover {
+            //   background: linear-gradient(to bottom, #285f8f, #4f93ce);
+            // }
+
+            &:active {
+              box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+            }
+          }
+          .download-size-text {
+            color: rgba(51, 51, 51, 0.5019607843);
+          }
+        }
+      }
+    }
+  }
+}
