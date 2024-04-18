@@ -2,8 +2,6 @@
 // styles.scss
 @import "styles/base/_reboot";
 @import "styles/base/_variables";
-@import "styles/base/_mixins";
-// Import other styles as needed
 
 :root {
   --color-white: #{$color-white};
